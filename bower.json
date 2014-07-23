@@ -12,7 +12,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": ">=1.9",
     "moment": ">=2.2.1"
   }
 }
