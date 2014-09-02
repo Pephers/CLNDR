@@ -32,7 +32,7 @@
     } else {
 
         // Browser globals
-        factory(moment);
+        this.Clndr = factory(moment);
     }
 
 }(function (moment, undefined) {
@@ -167,7 +167,7 @@
     };
 
     // The actual plugin constructor
-    this.Clndr = function ( element, options ) {
+    var Clndr = function ( element, options ) {
         this.element = element;
 
         // merge the default options with user-provided options
@@ -1084,5 +1084,7 @@
         var defaults = { day: "", classes: this.options.targets.empty, events: [], date: null };
         return extend({}, defaults, options);
     }
+
+    return Clndr;
 
 }));
